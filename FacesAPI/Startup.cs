@@ -34,6 +34,15 @@ namespace FacesAPI
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "FacesAPI", Version = "v1" });
             });
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy", builder =>
+                 builder.AllowAnyMethod()
+                 .AllowAnyHeader()
+                 .SetIsOriginAllowed((host) => true)
+                 .AllowCredentials());
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,6 +57,7 @@ namespace FacesAPI
 
             app.UseHttpsRedirection();
 
+            app.UseCors("CorsPolicy");
             app.UseRouting();
 
             app.UseAuthorization();

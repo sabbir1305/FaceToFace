@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Faces", "Faces", "{3EA4C7EA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacesAPI", "FacesAPI\FacesAPI.csproj", "{40C8B5C5-F379-4905-849F-433F6DAFFB19}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacesApiTest", "FacesApiTest\FacesApiTest.csproj", "{748A1E66-2517-49F5-A10A-442CD834904F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +19,17 @@ Global
 		{40C8B5C5-F379-4905-849F-433F6DAFFB19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40C8B5C5-F379-4905-849F-433F6DAFFB19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40C8B5C5-F379-4905-849F-433F6DAFFB19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{748A1E66-2517-49F5-A10A-442CD834904F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{748A1E66-2517-49F5-A10A-442CD834904F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{748A1E66-2517-49F5-A10A-442CD834904F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{748A1E66-2517-49F5-A10A-442CD834904F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{40C8B5C5-F379-4905-849F-433F6DAFFB19} = {3EA4C7EA-F541-48A7-9061-95A3883E5DCB}
+		{748A1E66-2517-49F5-A10A-442CD834904F} = {3EA4C7EA-F541-48A7-9061-95A3883E5DCB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2F9F4AFF-6EF0-412F-A294-2977654B2AD7}
