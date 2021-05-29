@@ -53,7 +53,7 @@ namespace Faces.WebMVC.Controllers
                 model.ImageData,
                 model.ImageUrl
             });
-
+            ViewBag.OrderId = model.OrderId;
             return View("Thanks");
         }
 

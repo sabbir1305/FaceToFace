@@ -1,0 +1,32 @@
+﻿@model Faces.WebMVC.ViewModels.OrderVM
+@{
+    ViewBag.Title = "Register order page";
+}
+
+<div class="row">
+    <div class="col-12">
+        <img src="~/images/faceslogo.png"/>
+        <h2>Order Registration</h2>
+    </div>
+
+
+
+</div>
+            <form asp-controller="Home" asp-action="RegisterOrder" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Enter your emal address and upload your faces picture</h3>
+                    </div>
+                    <div class="col-12">
+                        <label asp-for="UserEmail"></label>
+                        <input asp-for="UserEmail" class="form-control input-sm" />
+                    </div>
+                    <div class="col-12">
+                       <p>Upload your image file using the button below</p>
+                        <input type="file" name="File" />
+                    </div>
+                    <div class="col-12">
+                        <input type="submit" class="btn btn-info" value="Submit" />
+                    </div>
+                </div>
+            </form>
